@@ -4,6 +4,7 @@ import {
   Route,
   Routes,
   Navigate,
+  Switch,
 } from "react-router-dom";
 import NewPlace from "./places/pages/NewPlace";
 import Users from "./users/pages/Users";
