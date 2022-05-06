@@ -7,7 +7,7 @@ const Users = () => {
     {
       id: "U1",
       name: 'Tinsae Mesfin',
-      image: 'https://cdn.pixabay.com/photo/2022/04/19/19/48/boy-7143682_960_720.jpg',
+      image: 'https:// cdn.pixabay.com/photo/2022/04/19/19/48/boy-7143682_960_720.jpg',
       placeCount: 3,
     },
   ];

@@ -8,15 +8,19 @@ import {
 } from "react-router-dom";
 import NewPlace from "./places/pages/NewPlace";
 import Users from "./users/pages/Users";
+import MainNavigation from "./shared/components/Navigation/MainNavigation";
 
 const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" exact element={<Users />} />
-        <Route path="/places/new" exact element={<NewPlace />} />
-        <Route path="*" exact element={<Users />} />
-      </Routes>
+      <MainNavigation />
+      <main>
+        <Routes>
+          <Route path="/" exact element={<Users />} />
+          <Route path="/places/new" exact element={<NewPlace />} />
+          <Route path="*" exact element={<Users />} />
+        </Routes>
+      </main>
     </Router>
   );
 };

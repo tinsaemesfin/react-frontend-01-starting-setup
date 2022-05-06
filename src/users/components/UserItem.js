@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./usersStyles.css";
 import Avatar from "../../shared/components/UIElements/Avatar";
 import Card from "../../shared/components/UIElements/Card";
-const UserItem = (props) => {
+const UserItem = props => {
   return (
     <li className="user-item">
       <Card className="user-item__content">
