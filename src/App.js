@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import NewPlace from "./places/pages/NewPlace";
 import Users from "./users/pages/Users";
+import UserPlaces from "./places/pages/UserPlaces";
+
 import MainNavigation from "./shared/components/Navigation/MainNavigation";
 
 const App = () => {
@@ -18,6 +20,8 @@ const App = () => {
         <Routes>
           <Route path="/" exact element={<Users />} />
           <Route path="/places/new" exact element={<NewPlace />} />
+        <Route path="/:userId/places" exact  element={<UserPlaces />} />
+          
           <Route path="*" exact element={<Users />} />
         </Routes>
       </main>
